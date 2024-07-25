@@ -30,6 +30,9 @@ git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 # 添加主题
 git clone -b js --single-branch https://github.com/gngpp/luci-theme-design package/luci-theme-design
 git clone https://github.com/derisamedia/luci-theme-alpha.git package/luci-theme-alpha
+
+# 添加测速插件
+git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
 # 添加 万能推送
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-pushbot
 # 添加关机插件
@@ -56,6 +59,8 @@ CONFIG_PACKAGE_luci-theme-openwrt-2020=y
 
 CONFIG_PACKAGE_luci-theme-alpha=y
 
+# 测速插件
+CONFIG_PACKAGE_luci-app-netspeedtest=y
 
 # 万能推送
 CONFIG_PACKAGE_luci-app-pushbot=y
