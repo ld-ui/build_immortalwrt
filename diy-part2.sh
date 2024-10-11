@@ -34,7 +34,7 @@ git clone https://github.com/derisamedia/luci-theme-alpha.git package/luci-theme
 # 添加测速插件
 # git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
 # 添加 万能推送
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-pushbot
+git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
 # 添加关机插件
 #git clone https://github.com/VPN-V2Ray/luci-app-poweroff.git package/luci-app-poweroff
 # 添加passwall2
