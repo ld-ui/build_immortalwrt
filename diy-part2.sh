@@ -12,7 +12,7 @@
 
 
 # 移除要替换的包
-rm -rf feeds/packages/net/v2ray-geodata
+#rm -rf feeds/packages/net/v2ray-geodata
 
 # Git稀疏克隆，只克隆指定目录到本地
 function git_sparse_clone() {
@@ -25,10 +25,10 @@ function git_sparse_clone() {
 }
 
 # 添加额外插件
-git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+#git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
 # 添加主题
-git clone -b js --single-branch https://github.com/gngpp/luci-theme-design package/luci-theme-design
+#git clone -b js --single-branch https://github.com/gngpp/luci-theme-design package/luci-theme-design
 git clone https://github.com/derisamedia/luci-theme-alpha.git package/luci-theme-alpha
 
 # 添加测速插件
@@ -49,7 +49,7 @@ chmod -R 777 add_turboacc.sh
 
 echo "
 # 主题
-CONFIG_PACKAGE_luci-theme-design=y
+#CONFIG_PACKAGE_luci-theme-design=y
 
 CONFIG_PACKAGE_luci-theme-argon=y
 
