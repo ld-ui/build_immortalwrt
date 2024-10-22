@@ -42,22 +42,22 @@ git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
 # 添加应用过滤
 # git clone  https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 #加入turboacc
-curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh
-chmod -R 777 add_turboacc.sh
-./add_turboacc.sh
+# curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh
+# chmod -R 777 add_turboacc.sh
+# ./add_turboacc.sh
 
 
 echo "
 # 主题
-#CONFIG_PACKAGE_luci-theme-design=y
+# CONFIG_PACKAGE_luci-theme-design=y
 
-CONFIG_PACKAGE_luci-theme-argon=y
+# CONFIG_PACKAGE_luci-theme-argon=y
 
-CONFIG_PACKAGE_luci-theme-material=y
+# CONFIG_PACKAGE_luci-theme-material=y
 
-CONFIG_PACKAGE_luci-theme-openwrt-2020=y
+# CONFIG_PACKAGE_luci-theme-openwrt-2020=y
 
-CONFIG_PACKAGE_luci-theme-alpha=y
+#CONFIG_PACKAGE_luci-theme-alpha=y
 
 # 测速插件
 #CONFIG_PACKAGE_luci-app-netspeedtest=y
@@ -77,23 +77,23 @@ CONFIG_PACKAGE_luci-app-turboacc=y
 " >> .config
 
 # 修改默认IP
-sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
+# sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 
 # 修改默认子网掩码
-sed -i 's/255.255.255.0/255.255.252.0/g' package/base-files/files/bin/config_generate
+# sed -i 's/255.255.255.0/255.255.252.0/g' package/base-files/files/bin/config_generate
 
 # 修改默认主题
 #sed -i 's/luci-theme-openwrt-2020/luci-theme-alpha/g' feeds/luci/collections/luci/Makefile
 
 # 修改主机名
-sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
+# sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
 
 # 修改Ping 默认网址 immortalwrt.org
 #cat feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_network/diagnostics.htm
 
 # 修改系统信息
-cp -f $GITHUB_WORKSPACE/99-default-settings package/emortal/default-settings/files/99-default-settings
-cp -f $GITHUB_WORKSPACE/banner package/base-files/files/etc/banner
+# cp -f $GITHUB_WORKSPACE/99-default-settings package/emortal/default-settings/files/99-default-settings
+# cp -f $GITHUB_WORKSPACE/banner package/base-files/files/etc/banner
 
 # 修改主题背景
 #cp -f $GITHUB_WORKSPACE/argon/img/bg1.jpg feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
