@@ -192,7 +192,7 @@ jobs:
         token: ${{ env.GITHUB_TOKEN }}
 
     - name: 删除自动发布的旧固件
-      uses: dev-drprasad/delete-older-releases@master
+      uses: dev-drprasad/delete-older-releases@openwrt-23.05
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
         keep_latest: 1
