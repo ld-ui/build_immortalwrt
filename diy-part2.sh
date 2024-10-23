@@ -63,16 +63,16 @@ echo "
 #CONFIG_PACKAGE_luci-app-netspeedtest=y
 
 # 万能推送
-CONFIG_PACKAGE_luci-app-pushbot=y
+# CONFIG_PACKAGE_luci-app-pushbot=y
 
 # 关机插件
 #CONFIG_PACKAGE_luci-app-poweroff=y
 
 # passwall2
-#CONFIG_PACKAGE_luci-app-passwall2=y
+# CONFIG_PACKAGE_luci-app-passwall2=y
 
 # TurboAcc
-CONFIG_PACKAGE_luci-app-turboacc=y
+# CONFIG_PACKAGE_luci-app-turboacc=y
 
 " >> .config
 
