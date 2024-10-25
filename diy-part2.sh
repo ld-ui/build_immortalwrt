@@ -29,7 +29,7 @@ curl -s https://downloads.openwrt.org/releases/23.05.5/targets/x86/64/openwrt-23
 
 # 添加主题
 #git clone -b js --single-branch https://github.com/gngpp/luci-theme-design package/luci-theme-design
-git clone https://github.com/derisamedia/luci-theme-alpha.git package/luci-theme-alpha
+#git clone https://github.com/derisamedia/luci-theme-alpha.git package/luci-theme-alpha
 
 # 添加测速插件
 # git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
@@ -42,9 +42,9 @@ git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
 # 添加应用过滤
 # git clone  https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 #加入turboacc
-# curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh
-# chmod -R 777 add_turboacc.sh
-# ./add_turboacc.sh
+ curl -sSL https://raw.githubusercontent.com/chenmozhijin/turboacc/luci/add_turboacc.sh -o add_turboacc.sh
+ chmod -R 777 add_turboacc.sh
+./add_turboacc.sh
 
 
 echo "
@@ -72,7 +72,7 @@ echo "
 # CONFIG_PACKAGE_luci-app-passwall2=y
 
 # TurboAcc
-# CONFIG_PACKAGE_luci-app-turboacc=y
+ CONFIG_PACKAGE_luci-app-turboacc=y
 
 " >> .config
 
