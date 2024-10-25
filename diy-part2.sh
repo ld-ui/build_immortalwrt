@@ -23,7 +23,7 @@ function git_sparse_clone() {
   mv -f $@ ../package
   cd .. && rm -rf $repodir
 }
-
+curl -s https://downloads.openwrt.org/releases/23.05.5/targets/x86/64/openwrt-23.05.5-x86-64.manifest | grep kernel | awk '{print $3}' | awk -F- '{print $3}' > vermagic
 # 添加额外插件
 #git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
