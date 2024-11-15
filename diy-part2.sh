@@ -23,7 +23,7 @@ function git_sparse_clone() {
   mv -f $@ ../package
   cd .. && rm -rf $repodir
 }
-curl -s https://downloads.openwrt.org/releases/23.05.5/targets/x86/64/openwrt-23.05.5-x86-64.manifest | grep kernel | awk '{print $3}' | awk -F- '{print $3}' > vermagic
+# curl -s https://downloads.openwrt.org/releases/23.05.5/targets/x86/64/openwrt-23.05.5-x86-64.manifest | grep kernel | awk '{print $3}' | awk -F- '{print $3}' > vermagic
 # 添加额外插件
 #git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
@@ -34,7 +34,7 @@ curl -s https://downloads.openwrt.org/releases/23.05.5/targets/x86/64/openwrt-23
 # 添加测速插件
 # git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
 # 添加 万能推送
-git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
+# git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
 # 添加关机插件
 #git clone https://github.com/VPN-V2Ray/luci-app-poweroff.git package/luci-app-poweroff
 # 添加passwall2
